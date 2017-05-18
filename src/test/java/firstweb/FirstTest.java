@@ -24,7 +24,7 @@ public class FirstTest {
         System.setProperty("webdriver.chrome.driver", "d:/taa/install/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(22, TimeUnit.SECONDS);
         driver.get("http://mail.ru/");
     }
 
