@@ -24,30 +24,33 @@ public class FirstTest {
         System.setProperty("webdriver.chrome.driver", "d:/taa/install/chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(22, TimeUnit.SECONDS);
-        driver.get("http://mail.ru/");
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("https://www.facebook.com/");
     }
 
     @Test
     public void userLogin() throws IOException {
-        WebElement loginField = driver.findElement(By.id("mailbox__login"));
-        loginField.clear();
-        loginField.sendKeys("kozlovets");
 
-        WebElement passwordField = driver.findElement(By.xpath("//*[@id=\"mailbox__password\"]"));
+        WebElement loginField = driver.findElement(By.id("email"));
+        loginField.clear();
+        loginField.sendKeys("alexey.kozlovets@gmail.com");
+
+        WebElement passwordField = driver.findElement(By.id("pass"));
         passwordField.sendKeys("Ctuvtynbhjdfybt");
 
-        WebElement loginButton = driver.findElement(By.xpath("//*[@id=\"mailbox__auth__button\"]"));
+        WebElement loginButton = driver.findElement(By.xpath("//*[@id=\"loginbutton\"]"));
         loginButton.click();
 
-        WebElement loginUsers = driver.findElement(By.xpath("//*[@id=\"PH_user-email\"]"));
-        Assert.assertEquals(loginUsers.getText(), "kozlovets@mail.ru");
-
+        WebElement loginUsers = driver.findElement(By.xpath("//*[@id=\"navItem_100001825392498\"]/a/div"));
+        Assert.assertEquals(loginUsers.getText(), "Alexey Kozlovets");
     }
 
     @AfterClass
     public void closePage() {
-        driver.findElement(By.xpath("//*[@id=\"PH_logoutLink\"]"));
+        driver.findElement(By.cssSelector("body > div._n8._3qx.uiLayer._3qw > div._3ixn")).click();
+        driver.findElement(By.xpath("//*[@id=\"pageLoginAnchor\"]")).click();
+
+        driver.findElement(By.xpath("//*[contains(@id, 'js')]/div/div/ul/li[12]/a")).click();// локатор заморачивался-заморачивался
         driver.quit();
     }
 }
