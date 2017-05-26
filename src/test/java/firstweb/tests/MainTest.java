@@ -16,16 +16,16 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Alexey on 22.05.2017.
  */
-public class LoginTest {
+public class MainTest {
     public static WebDriver driver;
     public static LoginPage loginPage;
     public static MainPage mainPage;
 
 
     /*Входные данные*/
-    public String userName = "Alexey Kozlovets";
-    public String email = "alexey.kozlovets@gmail.com";
-    public String password = "Ctuvtynbhjdfybt";
+    public static String userName1 = "Alexey Kozlovets";
+    public static String email = "alexey.kozlovets@gmail.com";
+    public static String password = "Ctuvtynbhjdfybt";
 
     @BeforeClass
     public static void setup() {
@@ -40,12 +40,12 @@ public class LoginTest {
     }
 
     @Test
-     public void loginTest(){
-        loginPage.writeEmail(this.email);
-        loginPage.writePass(this.password);
+     public static void main(){
+        loginPage.writeEmail(email);
+        loginPage.writePass(password);
         loginPage.logIn();
         String userName = mainPage.getUserName();
-        Assert.assertEquals(userName, this.userName);
+        Assert.assertEquals(userName1, userName);
         mainPage.exitOwnerAccount();
         }
 
