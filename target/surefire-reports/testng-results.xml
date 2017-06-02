@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="autotest.TestNG by packages" duration-ms="18676" started-at="2017-05-26T14:27:12Z" finished-at="2017-05-26T14:27:30Z">
+  <suite name="autotest.TestNG by packages" duration-ms="14522" started-at="2017-06-01T14:53:08Z" finished-at="2017-06-01T14:53:23Z">
     <groups>
     </groups>
-    <test name="facebook.tests" duration-ms="18676" started-at="2017-05-26T14:27:12Z" finished-at="2017-05-26T14:27:30Z">
+    <test name="facebook.tests" duration-ms="14522" started-at="2017-06-01T14:53:08Z" finished-at="2017-06-01T14:53:23Z">
       <class name="firstweb.tests.MainTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:firstweb.tests.MainTest@77b52d12]" name="setup" is-config="true" duration-ms="6321" started-at="2017-05-26T17:27:12Z" finished-at="2017-05-26T17:27:18Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:firstweb.tests.MainTest@77b52d12]" name="setup" is-config="true" duration-ms="6536" started-at="2017-06-01T17:53:08Z" finished-at="2017-06-01T17:53:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="main()[pri:0, instance:firstweb.tests.MainTest@77b52d12]" name="main" duration-ms="11400" started-at="2017-05-26T17:27:18Z" finished-at="2017-05-26T17:27:30Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:firstweb.tests.MainTest@77b52d12]" name="main" duration-ms="6907" started-at="2017-06-01T17:53:15Z" finished-at="2017-06-01T17:53:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="closePage()[pri:0, instance:firstweb.tests.MainTest@77b52d12]" name="closePage" is-config="true" duration-ms="941" started-at="2017-05-26T17:27:30Z" finished-at="2017-05-26T17:27:30Z">
+        <test-method status="PASS" signature="closePage()[pri:0, instance:firstweb.tests.MainTest@77b52d12]" name="closePage" is-config="true" duration-ms="1070" started-at="2017-06-01T17:53:21Z" finished-at="2017-06-01T17:53:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closePage -->

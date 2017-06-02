@@ -18,6 +18,8 @@ public class MainPage {
 
     public WebDriver driver;
 
+
+
     @FindBy(xpath = "//*[@id=\"navItem_100001825392498\"]/a/div")
     private WebElement pagesUsersName;                                                  // подпись Имени пользователя
 
@@ -30,8 +32,12 @@ public class MainPage {
     @FindBy(xpath = "//*[contains(@id, 'js')]/div/div/ul/li[12]/a")
     private WebElement iUPMLogOut;                                                      // п.вспл.меню "Выход"
 
+    public void setBlackScreenClickable(){
+        blackScreenClickable.click();
+    }
+
     public void exitOwnerAccount(){                                                     // выход из аккаунта
-        /*if (blackScreenClickable.isDisplayed()) */blackScreenClickable.click();
+        /*if (blackScreenClickable.isDisplayed()) */
         upPopupMenu.click();
         iUPMLogOut.click();
     }
@@ -39,6 +45,10 @@ public class MainPage {
     public String getUserName(){                                                         // надпись имени Польз-ля на странице
         String userName = pagesUsersName.getText();
         return userName;
+    }
+
+    public void moveToOwnerPage(){                                                        // переход на страницу Пользователя [OwnerPage]
+        pagesUsersName.click();
     }
 
 
