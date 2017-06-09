@@ -24,10 +24,12 @@ public class MainTest {
     public static OwnerPage ownerPage;
 
 
-    /*Р’С…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ*/
+    /*Входные данные*/
+    public static String url = "https://www.facebook.com/";
     public static String userName1 = "Alexey Kozlovets";
     public static String email = "alexey.kozlovets@gmail.com";
     public static String password = "Ctuvtynbhjdfybt";
+
 
     @BeforeClass
     public static void setup() {
@@ -39,12 +41,12 @@ public class MainTest {
         ownerPage = new OwnerPage(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://www.facebook.com/");
+        driver.get(url);
     }
 
     @Test
-    public static void test() {                                                     // РџСЂРѕРІРµСЂРєР° С‡С‚Рѕ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ
-        loginPage.writeEmail(email);                                                 // РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ СЃРѕРІРїР°РґР°РµС‚ СЃ Р·Р°РґР°РЅРЅС‹Рј
+    public static void test() {                                                     // Проверка что на главной странице
+        loginPage.writeEmail(email);                                                 // имя пользователя совпадает с заданным
         loginPage.writePass(password);
         loginPage.logIn();
         mainPage.setBlackScreenClickable();
@@ -53,8 +55,8 @@ public class MainTest {
     }
 
     @Test
-    public static void test2() {                                                    // РџСЂРѕРІРµСЂРёС‚СЊ С‡С‚Рѕ РЅР° СЃС‚СЂР°РЅРёС†Рµ РџРѕР»СЊР·-Р»СЏ РёРјСЏ
-        mainPage.moveToOwnerPage();                                                 // РїРѕР»СЊ-Р»СЏ СЃРѕРІРїР°РґР°РµС‚ СЃ РёРјРµРЅРµРј РЅР° Р“Р».СЃС‚СЂР°РЅРёС†Рµ
+    public static void test2() {                                                    // Проверить что на странице Польз-ля имя
+        mainPage.moveToOwnerPage();                                                 // поль-ля совпадает с именем на Гл.странице
         Assert.assertEquals(userName1, ownerPage.OwnerName());
         mainPage.exitOwnerAccount();
     }
