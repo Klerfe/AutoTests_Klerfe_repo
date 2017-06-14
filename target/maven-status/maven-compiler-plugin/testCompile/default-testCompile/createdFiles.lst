@@ -1,0 +1,7 @@
+pages\FiltersResult.class
+tests\MainTest.class
+properties\Browser.class
+pages\LoginPage.class
+pages\OwnerPage.class
+properties\Proper.class
+pages\MainPage.class

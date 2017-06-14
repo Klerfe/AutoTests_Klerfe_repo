@@ -4,7 +4,7 @@
     <test verbose="2" name="facebook.tests">
 
         <classes>
-            <class name="firstweb.tests.MainTest" />
+            <class name="tests.MainTest" />
         </classes>
     </test>
 </suite>
