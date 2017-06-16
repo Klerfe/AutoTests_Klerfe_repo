@@ -30,27 +30,25 @@ public class MainTest {
 
 
     /*Входные данные*/
-/*    public static void iniProp() {
-        FileInputStream fis;
+    public static Properties iniProp() {
         Properties properties = new Properties();
 
         try {
-            fis = new FileInputStream("src/main/resources/configTs.properties");
+            FileInputStream fis = new FileInputStream("src/main/resources/configTs.properties");
             properties.load(fis);
         }
         catch (IOException e) {
             System.err.println("ОШИБКА: Файл свойств отсуствует!");
-        }*/
-
-        private static String url = "https://www.facebook.com/";
-        private static String userName1 = "Alexey Kozlovets";
-        private static String email = "alexey.kozlovets@gmail.com";
-        private static String password = "Ctuvtynbhjdfybt";
-        private static int monitorWidth = 1280;
-        private static int browserUpPanel = 20;
-        private static int browserScroll = 10;
-
-
+        }
+        return properties;
+    }
+    private static String url = iniProp().getProperty("url");
+    private static String userName1 = iniProp().getProperty("userName1");
+    private static String email = iniProp().getProperty("e_mail");
+    private static String password = iniProp().getProperty("password");
+    private static int browserUpPanel = Integer.parseInt(iniProp().getProperty("browserUpPanel"));
+    private static int browserScroll = Integer.parseInt(iniProp().getProperty("browserScroll"));
+    private static int monitorWidth = Integer.parseInt(iniProp().getProperty("monitorWidth"));
 
     @BeforeClass
     public static void setup() {
