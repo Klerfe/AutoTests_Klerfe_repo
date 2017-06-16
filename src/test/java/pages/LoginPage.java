@@ -40,5 +40,5 @@ public class LoginPage {
 
     public void logIn(){                                              // нажать авторизацию
         loginButton.click();
-    }
+    }                       // отправка данных на сервер
 }

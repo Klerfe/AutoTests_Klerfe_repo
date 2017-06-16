@@ -18,10 +18,10 @@ public class FiltersResult {
     }
 
     @FindBy(className = "_32mo")
-    private WebElement personFinded;
+    private WebElement personFinded;                // результаты поиска людей(1-й из найденных)
 
 
-    public String getFirstPersonFinded() {
+    public String getFirstPersonFinded() {          // имя найденного (1-го)
       return personFinded.getText();
     }
 }

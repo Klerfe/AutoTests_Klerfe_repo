@@ -33,19 +33,29 @@ public class MainPage {
     @FindBy(xpath = "//*[@id=\"q\"]")
     private WebElement uiSearchInput;                                                   // элемент поиска
 
+    @FindBy(xpath = "//*[@id = \"content_container\"]")                                 // блок с контентом (по центру)
+    private WebElement divContentContainer;
 
+    @FindBy(xpath = "//*[@id = \"u_0_1i\"]")                                            // блок с чатами (справа)
+    private WebElement divChatFriends;
+
+    @FindBy(xpath = "//*[@id = \"pagelet_navigation\"]")                                // блок с меню (слева)
+    private WebElement divLetNavigation;
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public boolean viewUiSearchInput(){
         return uiSearchInput.isDisplayed();                                             // проверяем есть ли элемент поиска
     }
 
-    public void setSearchInput(String args) {
-        uiSearchInput.sendKeys(args);
+    public void setSearchInput(String args) {                                           // ввод данных в поле поиска
+        uiSearchInput.sendKeys(args);                                                    // и подтверждение
         uiSearchInput.submit();
     }
 
     public void setBlackScreenClickable(){
-        if(blackScreenClickable.isEnabled()){
+        if(blackScreenClickable.isEnabled()){                                           // черный экран в Chrome (не изпользую в Firefox)
         blackScreenClickable.click();}
     }
 
@@ -58,6 +68,12 @@ public class MainPage {
     public String getUserName(){                                                         // надпись имени Польз-ля на странице
         String userName = pagesUsersName.getText();
         return userName;
+    }
+
+    public int sizeSumMainDiv(){
+
+        return (divChatFriends.getSize().getWidth() + divContentContainer.getSize().getWidth() +
+                divLetNavigation.getSize().getWidth());
     }
 
     public void moveToOwnerPage(){                                                        // переход на страницу Пользователя [OwnerPage]
