@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -42,6 +43,9 @@ public class MainPage {
     @FindBy(xpath = "//*[@id = \"pagelet_navigation\"]")                                // блок с меню (слева)
     private WebElement divLetNavigation;
 
+    @FindBy(xpath = "//div/h1/a")                                                       // верхняя панель страницы
+    public WebElement topPanelBar;
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -70,7 +74,7 @@ public class MainPage {
         return userName;
     }
 
-    public int sizeSumMainDiv(){
+    public int sizeSumMainDiv(){                                                                    //сумма размеров ширины осн. блоков страницы
 
         return (divChatFriends.getSize().getWidth() + divContentContainer.getSize().getWidth() +
                 divLetNavigation.getSize().getWidth());
@@ -78,6 +82,11 @@ public class MainPage {
 
     public void moveToOwnerPage(){                                                        // переход на страницу Пользователя [OwnerPage]
         pagesUsersName.click();
+    }
+
+    public String getColor(WebElement element){
+        return Color.fromString(element.getCssValue("color")).asHex();
+
     }
 
 

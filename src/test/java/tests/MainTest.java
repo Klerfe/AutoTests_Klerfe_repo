@@ -83,6 +83,11 @@ public class MainTest {
     }
 
     @Test
+    public static void test2_1() {
+        Assert.assertEquals(mainPage.getColor(mainPage.topPanelBar), "#365899");  // проверка цвета верхнего бара MainPage
+    }
+
+    @Test
     public static void test3() {                                                            // проверить что основные блоки главной
         Assert.assertTrue(mainPage.sizeSumMainDiv() <= (monitorWidth - browserScroll));  // не выходят за границы экрана монитора
     }
