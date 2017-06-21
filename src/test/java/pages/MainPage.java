@@ -22,7 +22,7 @@ public class MainPage {
     @FindBy(css = "body > div._n8._3qx.uiLayer._3qw > div._3ixn")
     private WebElement blackScreenClickable;                                            // при входе на гл.страницу черный экран
 
-    @FindBy(xpath = "//*[@id=\"navItem_100001825392498\"]/a/div")
+    @FindBy(xpath = "//ul/li/a/div")
     private WebElement pagesUsersName;                                                  // подпись Имени пользователя
 
     @FindBy(xpath = "//*[@id=\"pageLoginAnchor\"]")
