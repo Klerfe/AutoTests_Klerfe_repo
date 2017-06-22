@@ -1,21 +1,17 @@
 package tests;
 
-import pages.FiltersResult;
-import pages.LoginPage;
-import pages.MainPage;
-import pages.OwnerPage;
-import properties.Proper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.FiltersResult;
+import pages.LoginPage;
+import pages.MainPage;
+import pages.OwnerPage;
+import static properties.Proper.*;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -28,36 +24,9 @@ public class MainTest {
     public static OwnerPage ownerPage;
     public static FiltersResult filtersResult;
 
-
-    /*Входные данные*/
-    public static Properties iniProp() {
-        Properties properties = new Properties();
-
-        try {
-            FileInputStream fis = new FileInputStream("src/main/resources/configTs.properties");
-            properties.load(fis);
-        }
-        catch (IOException e) {
-            System.err.println("ОШИБКА: Файл свойств отсуствует!");
-        }
-        return properties;
-    }
-    private static String url = iniProp().getProperty("url");
-    private static String userName = iniProp().getProperty("userName1");
-    private static String friendNameLt = iniProp().getProperty("friendName1");
-    private static String friendNameRS = iniProp().getProperty("friendName2");
-    private static String email = iniProp().getProperty("e_mail");
-    private static String password = iniProp().getProperty("password");
-    private static String tel = iniProp().getProperty("tel1");
-    private static int browserUpPanel = Integer.parseInt(iniProp().getProperty("browserUpPanel"));
-    private static int browserScroll = Integer.parseInt(iniProp().getProperty("browserScroll"));
-    private static int monitorWidth = Integer.parseInt(iniProp().getProperty("monitorWidth"));
-
     @BeforeClass
     public static void setup() {
-        Proper proper = new Proper();
-        System.setProperty(proper.getBrowDriverName(), proper.getBrowDriverPath());
-
+        System.setProperty(browDriverName, browDriverPath);
         driver = new FirefoxDriver();
 
         loginPage = new LoginPage(driver);
