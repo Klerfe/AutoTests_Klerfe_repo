@@ -18,9 +18,9 @@ public class OwnerPage {
     }
 
     @FindBy(xpath = "//*[@id=\"fb-timeline-cover-name\"]")
-    private WebElement ownerName;
+    public WebElement ownerName;
 
-    public String OwnerName (){
+    public String ownerName (){
         return ownerName.getText();
     }
 

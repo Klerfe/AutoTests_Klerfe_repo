@@ -20,20 +20,20 @@ public class LoginPage {
 
 
     @FindBy(id = "email")
-    private WebElement email;                                       // поле email
+    private WebElement email;                                       // поле E_MAIL
 
     @FindBy(id = "pass")
-    private WebElement pass;                                        // поле password
+    private WebElement pass;                                        // поле PASSWORD
 
     @FindBy(xpath = "//*[@id=\"loginbutton\"]")
     private WebElement loginButton;                                 // кнопка авторизации
 
-    public void writeEmail(String args){                            // заполнить поле email
+    public void writeEmail(String args){                            // заполнить поле E_MAIL
         email.clear();
         email.sendKeys(args);
     }
 
-    public void writePass(String args){                              // заполнить поле password
+    public void writePass(String args){                              // заполнить поле PASSWORD
         pass.clear();
         pass.sendKeys(args);
     }

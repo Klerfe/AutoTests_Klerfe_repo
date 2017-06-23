@@ -23,7 +23,7 @@ public class MainPage {
     private WebElement blackScreenClickable;                                            // при входе на гл.страницу черный экран
 
     @FindBy(xpath = "//ul/li/a/div")
-    private WebElement pagesUsersName;                                                  // подпись Имени пользователя
+    public WebElement pagesUsersName;                                                  // подпись Имени пользователя
 
     @FindBy(xpath = "//*[@id=\"pageLoginAnchor\"]")
     private WebElement upPopupMenu;                                                     // вызов всплыв. меню на верх. панели(стрелка)
@@ -45,6 +45,13 @@ public class MainPage {
 
     @FindBy(xpath = "//div/h1/a")                                                       // верхняя панель страницы
     public WebElement topPanelBar;
+
+    @FindBy(xpath = ".//*[@id='appsNav']/ul/li[20]/a")                                  // левый блок меню, кнопка "Еще"
+    public WebElement buttonEshe;
+
+    @FindBy(xpath = ".//*[@id='navItem_2305272732']/a/div")                              // левый блок меню, кнопка "Фото"
+    public WebElement buttonPhoto;
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////

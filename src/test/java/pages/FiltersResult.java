@@ -20,7 +20,7 @@ public class FiltersResult {
     }
 
     @FindBy(className = "_32mo")
-    private WebElement personFinded;                // результаты поиска людей(1-й из найденных)
+    public WebElement personFinded;                // результаты поиска людей(1-й из найденных)
 
     @FindBy(className = "_32mo")                     // все найденные пользователи
     private List<WebElement> personsFinded;
