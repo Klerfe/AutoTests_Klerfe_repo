@@ -1,0 +1,9 @@
+pages\Photos.class
+pages\FiltersResult.class
+tests\MainTest.class
+metods\Metods.class
+properties\Browser.class
+pages\LoginPage.class
+pages\OwnerPage.class
+properties\Proper.class
+pages\MainPage.class

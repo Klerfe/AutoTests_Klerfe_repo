@@ -23,7 +23,7 @@ public class Photos {
     @FindBy(xpath = ".//*[@id='fb-timeline-cover-name']")
     public WebElement coverName;
 
-    @FindBy(xpath = ".//*[@id='u_jsonp_2_q']")
+    @FindBy(xpath = "//input[@type='file']")
     public WebElement buttonAddPhoto;
 
     @FindBy(xpath = ".//*[@id='js_g2']/div[2]/div[2]/div/div[2]/div/span[2]/button")

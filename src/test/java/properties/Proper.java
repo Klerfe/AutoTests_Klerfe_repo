@@ -9,7 +9,7 @@ import java.util.Properties;
  */
 public class Proper {
     /*Входные данные*/
-
+        public static final String BROWSER_NAME = iniProp().getProperty("browser_name");
         public static final String URL = iniProp().getProperty("url");
         public static final String USER_NAME = iniProp().getProperty("userName1");
         public static final String FRIEND_NAME_LT = iniProp().getProperty("friendName1");

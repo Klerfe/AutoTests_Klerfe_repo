@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [autotest.TestNG by packages]">
+  <test name="facebook.tests(failed)">
+    <classes>
+      <class name="tests.MainTest">
+        <methods>
+          <include name="setup"/>
+          <include name="test2_2"/>
+          <include name="test2"/>
+          <include name="closePage"/>
+          <include name="test3"/>
+          <include name="test2_5"/>
+          <include name="test99"/>
+          <include name="test"/>
+          <include name="test2_1"/>
+        </methods>
+      </class> <!-- tests.MainTest -->
+    </classes>
+  </test> <!-- facebook.tests(failed) -->
+</suite> <!-- Failed suite [autotest.TestNG by packages] -->

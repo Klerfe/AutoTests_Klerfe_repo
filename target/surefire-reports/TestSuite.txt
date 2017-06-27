@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 0.825 sec <<< FAILURE!
+setup(tests.MainTest)  Time elapsed: 0.423 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:108)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:104)
+	at tests.MainTest.setup(MainTest.java:30)

@@ -73,17 +73,12 @@ public class MainTest {
         Assert.assertTrue(Metods.checkUserName(photos.coverName));
     }
 
-/*    @Test                                                                            // Проверить что фотографий Нет - Надпись "Нет объектов (фото) для показа"
-    public static void test2_3(){
-        Assert.assertEquals(photos.divCollectionWrapper.getText(), "Нет объектов (фото) для показа");
-    }*/
-    @Test
+/*    @Test
     public static void test2_4(){
         photos.buttonAddPhoto.sendKeys(PHOTO_PATH);
-        photos.buttonAddPhoto2.click();
         Assert.assertEquals("d", "d");
         driver.get(URL);
-    }
+    }*/
 
     @Test
     public static void test2_5() {
