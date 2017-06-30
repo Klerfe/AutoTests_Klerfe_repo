@@ -8,6 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.*;
+import properties.Browser;
 
 import static properties.Proper.*;
 
@@ -16,8 +17,9 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Alexey on 22.05.2017.
  */
-public class MainTest {
+public class MainTest extends Browser {
     public static WebDriver driver;
+
     public static LoginPage loginPage;
     public static MainPage mainPage;
     public static OwnerPage ownerPage;
@@ -25,10 +27,8 @@ public class MainTest {
     public static Photos photos;
 
     @BeforeClass
-    public static void setup() {
-        System.setProperty(DRIVER_NAME, DRIVER_PATH);
-        driver = new FirefoxDriver();
-
+    public void setup() {
+        driver = super.browser(BROWSER_NAME);
         loginPage = new LoginPage(driver);
         mainPage = new MainPage(driver);
         ownerPage = new OwnerPage(driver);
@@ -103,3 +103,40 @@ public class MainTest {
     }
 
 }
+
+/*
+ConfigProperties
+        ***
+*/
+/*public class ConfigProperties {*//*
+
+    private static Properties PROPERTIES;
+    static {
+        try {
+            PROPERTIES = new Properties();
+            PROPERTIES.load(new InputStreamReader(new FileInputStream("src/main/resources/config.properties"), "UTF-8"));
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    public static String getProperty(String key){
+        return PROPERTIES.getProperty(key);
+    }
+}
+-------------------------
+
+    private static Properties PROPERTIES;
+    static {
+        PROPERTIES = new Properties();
+        URL props = ClassLoader.getSystemResource("config.properties");
+        try {
+
+            PROPERTIES.load(new InputStreamReader(props.openStream(), "UTF-8"));
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    public static String getProperty(String key){
+        return PROPERTIES.getProperty(key);
+    }
+}*/

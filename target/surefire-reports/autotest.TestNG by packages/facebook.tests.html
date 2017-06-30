@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 27 16:57:20 EEST 2017</td>
+<td>Started on:</td><td>Fri Jun 30 11:54:17 EEST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (150 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (82 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.MainTest.setup()'><b>setup</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,18 +112,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace439904756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace439904756'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace655381473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655381473'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,7 +151,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -182,7 +164,7 @@ function toggleAllBoxes() {
 <td title='tests.MainTest.closePage()'><b>closePage</b><br>Test class: tests.MainTest</td>
 <td></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -193,17 +175,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.MainTest.test()'><b>test</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -238,18 +211,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace682376643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace682376643'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace764577347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace764577347'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -286,20 +250,11 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 <tr>
 <td title='tests.MainTest.test2()'><b>test2</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -334,18 +289,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace854507466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace854507466'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1344645519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344645519'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -382,20 +328,11 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 <tr>
 <td title='tests.MainTest.test2_1()'><b>test2_1</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -430,18 +367,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1316061703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1316061703'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1234776885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1234776885'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -478,20 +406,11 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 <tr>
 <td title='tests.MainTest.test2_2()'><b>test2_2</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -526,18 +445,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace490150701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace490150701'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace540159270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540159270'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -574,20 +484,11 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 <tr>
 <td title='tests.MainTest.test2_5()'><b>test2_5</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -622,18 +523,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1413246829", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1413246829'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace422250493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace422250493'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -670,20 +562,11 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 <tr>
 <td title='tests.MainTest.test3()'><b>test3</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -718,18 +601,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace334203599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace334203599'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1690287238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690287238'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -766,20 +640,11 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 <tr>
 <td title='tests.MainTest.test99()'><b>test99</b><br>Test class: tests.MainTest</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+<td><div><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -814,18 +679,9 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1372082959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1372082959'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\${browser.path}
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:115)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:108)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:104)
-	at tests.MainTest.setup(MainTest.java:30)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1690254271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690254271'><pre>java.lang.NullPointerException
+	at tests.MainTest.setup(MainTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -862,7 +718,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 </pre></div></td>
 <td>0</td>
-<td>tests.MainTest@77b52d12</td></tr>
+<td>tests.MainTest@2d554825</td></tr>
 </table><p>
 </body>
 </html>
