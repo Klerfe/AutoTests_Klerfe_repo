@@ -1,7 +1,7 @@
 package metods;
 import org.openqa.selenium.WebElement;
 
-import static properties.Proper.*;
+import static properties.ConstIni.*;
 
 /**
  * Created by Alexey on 23.06.2017.

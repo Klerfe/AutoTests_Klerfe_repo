@@ -3,23 +3,20 @@ package properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import pages.*;
 
-import java.util.concurrent.TimeUnit;
-
-import static properties.Proper.*;
+import static properties.ConstIni.*;
 
 /**
  * Created by Alexey on 23.05.2017.
  */
-public class Browser {
+public class BrowserIni {
     public static WebDriver driver;
     public WebDriver browser(String browserName) {
         if (browserName.equals("firefox")){
-            System.setProperty(iniProp().getProperty("fireFoxDriverName"), iniProp().getProperty("fireFoxDriverPath"));
+            System.setProperty(getProperty("fireFoxDriverName"), getProperty("fireFoxDriverPath"));
             driver = new FirefoxDriver();}
             else if (browserName.equals("chrome")){
-            System.setProperty(iniProp().getProperty("chromeDriverName"), iniProp().getProperty("chromeDriverPath"));
+            System.setProperty(getProperty("chromeDriverName"), getProperty("chromeDriverPath"));
             driver = new ChromeDriver();
         }
         return driver;

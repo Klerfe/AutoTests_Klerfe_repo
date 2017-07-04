@@ -1,24 +1,21 @@
 package tests;
 
 import metods.Metods;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.*;
-import properties.Browser;
+import properties.BrowserIni;
 
-import static properties.Proper.*;
+import static properties.ConstIni.*;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Alexey on 22.05.2017.
  */
-public class MainTest extends Browser {
-    public static WebDriver driver;
+public class MainTest extends BrowserIni {
 
     public static LoginPage loginPage;
     public static MainPage mainPage;
@@ -26,19 +23,22 @@ public class MainTest extends Browser {
     public static FiltersResult filtersResult;
     public static Photos photos;
 
-    @BeforeClass
-    public void setup() {
-        driver = super.browser(BROWSER_NAME);
-        loginPage = new LoginPage(driver);
-        mainPage = new MainPage(driver);
-        ownerPage = new OwnerPage(driver);
-        filtersResult = new FiltersResult(driver);
-        photos = new Photos(driver);
 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get(URL);
-    }
+
+    @BeforeClass
+
+        public void setup () {
+            driver = super.browser(BROWSER_NAME);
+            loginPage = new LoginPage(driver);
+            mainPage = new MainPage(driver);
+            ownerPage = new OwnerPage(driver);
+            filtersResult = new FiltersResult(driver);
+            photos = new Photos(driver);
+
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.get(URL);
+        }
 
     @Test
     public static void test() {                                                     // Проверка, что на главной странице
@@ -105,10 +105,10 @@ public class MainTest extends Browser {
 }
 
 /*
-ConfigProperties
+ProperRead
         ***
 */
-/*public class ConfigProperties {*//*
+/*public class ProperRead {*//*
 
     private static Properties PROPERTIES;
     static {

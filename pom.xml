@@ -30,6 +30,9 @@
             <properties>
                 <browser_name>firefox</browser_name>
             </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>ch</id>
@@ -43,7 +46,7 @@
     <build>
         <resources>
             <resource>
-                <directory>\src\main\resources\</directory>
+                <directory>C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\src\main\resources\</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>

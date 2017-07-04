@@ -1,5 +1,6 @@
 pages\Photos.class
 pages\FiltersResult.class
+properties\ConfigProperties.class
 tests\MainTest.class
 metods\Metods.class
 properties\Browser.class
