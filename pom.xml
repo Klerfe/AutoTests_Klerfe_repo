@@ -46,7 +46,7 @@
     <build>
         <resources>
             <resource>
-                <directory>C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\src\main\resources\</directory>
+                <directory>C:\Users\Alexey\AutoTests_Klerfe_repo\FirstAutoTest\src\main\resources</directory>
                 <filtering>true</filtering>
             </resource>
         </resources>

@@ -40,8 +40,10 @@ public class MainTest extends BrowserIni {
             driver.get(URL);
         }
 
+
+
     @Test
-    public static void test() {                                                     // Проверка, что на главной странице
+    public void aAutorisationCorrect() {                                                     // Проверка, что на главной странице
         loginPage.writeEmail(TEL);                                                 // имя пользователя совпадает с заданным
         loginPage.writePass(PASSWORD);
         loginPage.logIn();
@@ -50,24 +52,25 @@ public class MainTest extends BrowserIni {
 
     }
 
-    @Test
-    public static void test2() {
+    @Test (dependsOnMethods = { "aAutorisationCorrect" })
+    public void assertSearchPeople() {
+        driver.get(URL);
         Assert.assertEquals(mainPage.viewUiSearchInput(), true);                // Проверка, что поиск на главной странице
         mainPage.setSearchInput(USER_NAME);                                          // находит соответствующих людей
         Assert.assertTrue(Metods.checkUserName(filtersResult.personFinded));
-        driver.get(URL);
     }
 
-    @Test
-    public static void test2_1() {
+    @Test (dependsOnMethods = { "aAutorisationCorrect" })
+    public void assertSearchPeople2() {
+        driver.get(URL);
         Assert.assertEquals(mainPage.viewUiSearchInput(), true);                // Проверка, что поиск на главной странице
         mainPage.setSearchInput(FRIEND_NAME_LT);                                          // находит соответствующих людей
         filtersResult.personsFindedCheck(FRIEND_NAME_LT, FRIEND_NAME_RS);
-        driver.get(URL);
     }
 
-    @Test
-    public static void test2_2() {                                                  // Проверка, что на странице Фото правильное Имя польз.
+    @Test (dependsOnMethods = { "aAutorisationCorrect" })
+    public void assertUserName_PhotoPage() {                                                  // Проверка, что на странице Фото правильное Имя польз.
+        driver.get(URL);
         mainPage.buttonEshe.click();
         mainPage.buttonPhoto.click();
         Assert.assertTrue(Metods.checkUserName(photos.coverName));
@@ -80,18 +83,21 @@ public class MainTest extends BrowserIni {
         driver.get(URL);
     }*/
 
-    @Test
-    public static void test2_5() {
+    @Test (dependsOnMethods = { "aAutorisationCorrect" })
+    public void assertColorUpBar_MainPage() {
+        driver.get(URL);
         Assert.assertEquals(mainPage.getColor(mainPage.topPanelBar), "#365899");  // проверка цвета верхнего бара MainPage
     }
 
-    @Test
-    public static void test3() {                                                            // проверить что основные блоки главной
+    @Test (dependsOnMethods = { "aAutorisationCorrect" })
+    public void assertCorrectSizeDivs_MainPage() {                                                            // проверить что основные блоки главной
+        driver.get(URL);
         Assert.assertTrue(mainPage.sizeSumMainDiv() <= (MONITOR_WIDTH - BROWSER_SCROLL));  // не выходят за границы экрана монитора
     }
 
-    @Test
-    public static void test99() {                                                    // Проверить, что на странице Польз-ля имя
+    @Test (dependsOnMethods = { "aAutorisationCorrect" })
+    public void assertUserName_OwnerPage() {
+        driver.get(URL);                                                            // Проверить, что на странице Польз-ля имя
         mainPage.moveToOwnerPage();                                                 // поль-ля совпадает с именем на Гл.странице
         Assert.assertTrue(Metods.checkUserName(ownerPage.ownerName));
         mainPage.exitOwnerAccount();
@@ -104,39 +110,3 @@ public class MainTest extends BrowserIni {
 
 }
 
-/*
-ProperRead
-        ***
-*/
-/*public class ProperRead {*//*
-
-    private static Properties PROPERTIES;
-    static {
-        try {
-            PROPERTIES = new Properties();
-            PROPERTIES.load(new InputStreamReader(new FileInputStream("src/main/resources/config.properties"), "UTF-8"));
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-    public static String getProperty(String key){
-        return PROPERTIES.getProperty(key);
-    }
-}
--------------------------
-
-    private static Properties PROPERTIES;
-    static {
-        PROPERTIES = new Properties();
-        URL props = ClassLoader.getSystemResource("config.properties");
-        try {
-
-            PROPERTIES.load(new InputStreamReader(props.openStream(), "UTF-8"));
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-    public static String getProperty(String key){
-        return PROPERTIES.getProperty(key);
-    }
-}*/
