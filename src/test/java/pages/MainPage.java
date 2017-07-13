@@ -18,7 +18,6 @@ public class MainPage {
 
     public WebDriver driver;
 
-
     @FindBy(css = "body > div._n8._3qx.uiLayer._3qw > div._3ixn")
     private WebElement blackScreenClickable;                                            // при входе на гл.страницу черный экран
 
@@ -46,7 +45,7 @@ public class MainPage {
     @FindBy(xpath = "//div/h1/a")                                                       // верхняя панель страницы
     public WebElement topPanelBar;
 
-    @FindBy(xpath = ".//*[@id='appsNav']/ul/li[20]/a")                                  // левый блок меню, кнопка "Еще"
+    @FindBy(xpath = ".//*[@id='appsNav']//a")                                  // левый блок меню, кнопка "Еще"
     public WebElement buttonEshe;
 
     @FindBy(xpath = ".//*[@id='navItem_2305272732']/a/div")                              // левый блок меню, кнопка "Фото"
@@ -82,9 +81,13 @@ public class MainPage {
     }
 
     public int sizeSumMainDiv(){                                                                    //сумма размеров ширины осн. блоков страницы
-
-        return (divChatFriends.getSize().getWidth() + divContentContainer.getSize().getWidth() +
-                divLetNavigation.getSize().getWidth());
+        int dCF = 0;
+        int dCC = 0;
+        int dLN = 0;
+        if (divChatFriends.isDisplayed()) {dCF = divChatFriends.getSize().getWidth();}
+        if (divContentContainer.isDisplayed()) {dCC = divContentContainer.getSize().getWidth();}
+        if (divLetNavigation.isDisplayed()) {dCC = divLetNavigation.getSize().getWidth();}
+        return (dCF + dCC + dLN);
     }
 
     public void moveToOwnerPage(){                                                        // переход на страницу Пользователя [OwnerPage]

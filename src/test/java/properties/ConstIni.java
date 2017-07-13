@@ -17,9 +17,13 @@ public class ConstIni extends ProperRead {
         public static final int BROWSER_UP_PANEL = Integer.parseInt(getProperty("browserUpPanel"));
         public static final int BROWSER_SCROLL = Integer.parseInt(getProperty("browserScroll"));
         public static final int MONITOR_WIDTH = Integer.parseInt(getProperty("monitorWidth"));
+        public static final String PASSWORD_FAILED = getProperty("password_failed");
+        public static final String TITLE_LOGIN_FAILED = getProperty("loginFailedTitle");
 
         public static final String DRIVER_NAME = getProperty("browDriverName");
         public static final String DRIVER_PATH = getProperty("browDriverPath");
+        public static final String MESSAGE_LOGIN_FAILED = getProperty("loginFailedNewAttempt");
+        public static final String MESSAGE_LOGIN_FAILED_HINT = getProperty("loginFailedNewAttemptHint");
 
 
   /*  static String iniProp(String key) {
